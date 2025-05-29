@@ -6,47 +6,6 @@ import re
 # Page config MUST be first Streamlit command
 st.set_page_config(page_title="🔮 Forecast Wizard", layout="centered", page_icon="📦")
 
-# Custom CSS for dark theme & file uploader buttons
-st.markdown(
-    """
-    <style>
-    /* Dark background and white text for the app */
-    body, .stApp {
-        background-color: #121212;
-        color: #eee;
-    }
-    /* Override text color in main app containers */
-    .css-1d391kg, .css-1v3fvcr, .css-1d391kg * {
-        color: #eee !important;
-    }
-    /* Style file uploader button */
-    div[data-baseweb="file-uploader"] > div > label {
-        background-color: #add8e6 !important;  /* Light blue */
-        color: black !important;
-        font-weight: 600;
-        border-radius: 6px;
-        padding: 8px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    div[data-baseweb="file-uploader"] > div > label:hover {
-        background-color: #87ceeb !important; /* Slightly darker blue on hover */
-    }
-    /* Style the Analyze button too */
-    button[kind="primary"] > div {
-        background-color: #4caf50 !important;
-        color: white !important;
-        font-weight: bold !important;
-        border-radius: 6px !important;
-        padding: 10px 20px !important;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 st.title("📦 Product Run-Out Forecaster")
 st.markdown(
     """
