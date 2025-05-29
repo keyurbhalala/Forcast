@@ -6,6 +6,42 @@ import re
 # Set page config - must be first Streamlit command
 st.set_page_config(page_title="🔮 Forecast Wizard", layout="centered", page_icon="📦")
 
+st.markdown(
+    """
+    <style>
+    body, .stApp {
+        background-color: #121212;
+        color: #eee;
+    }
+    .css-1d391kg, .css-1v3fvcr, .css-1d391kg * {
+        color: #eee !important;
+    }
+    button, label {
+        color: #eee !important;
+    }
+    .stButton>button {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+    }
+    /* Light blue background and black text for file uploader buttons */
+    div[data-baseweb="file-uploader"] > div > label {
+        background-color: #add8e6 !important;  /* Light blue */
+        color: black !important;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 8px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    div[data-baseweb="file-uploader"] > div > label:hover {
+        background-color: #87ceeb !important; /* Slightly darker blue on hover */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Dark mode styling with light text for visibility
 st.markdown(
     """
