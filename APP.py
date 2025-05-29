@@ -3,6 +3,9 @@ import pandas as pd
 import datetime
 import re
 import base64
+# ---------- App Config ----------
+st.set_page_config(page_title="🔮 Forecast Wizard", layout="centered")
+st.title("🔮 Product Run-Out Forecaster")
 
 # ---------- Add futuristic background ----------
 def get_base64(file_path):
@@ -44,9 +47,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ---------- App Config ----------
-st.set_page_config(page_title="🔮 Forecast Wizard", layout="centered")
-st.title("🔮 Product Run-Out Forecaster")
 
 st.markdown("""
 Upload two files:
